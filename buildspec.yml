@@ -17,7 +17,8 @@ phases:
 
 artifacts:
   files:
-    - "**/*"
+    - '**/*'
+  base-directory: 'dist*'
 
 cache:
   paths:
