@@ -2,24 +2,20 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 12
     commands:
       - echo Installing dependencies...
       - npm i -g @angular/cli
       - npm install
   build:
     commands:
-      - echo Building project...
-      - echo Build started on `date`
-      - ng build --prod
+      - echo Running tests...
+      - echo Tests started on `date`
+      - npm test
   post_build:
     commands:
-      - echo Build completed on `date`
-
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'output'
-  name: output.zip
+      - echo Tests completed on `date`
 
 cache:
   paths:
