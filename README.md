@@ -4,6 +4,8 @@ This app shows an Angular Material table with the contents of [https://corona-st
 
 - Special thanks to [sagarkarira](https://github.com/sagarkarira/coronavirus-tracker-cli).
 
+Online version is hosted in AWS [here](http://corona-tracker-docker.eu-west-1.elasticbeanstalk.com).
+
 ## Install
 
 Run `npm install` to install the required packages.
