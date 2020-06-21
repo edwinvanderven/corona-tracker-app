@@ -30,8 +30,8 @@
 
   <ng-container matColumnDef="todayCases">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Cases Today </th>
-    <td mat-cell *matCellDef="let entry"> {{getTodayCases(entry) | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{getTodayCases(worldStats) | number}} </td>
+    <td mat-cell *matCellDef="let entry"> {{getTodayCases(entry)}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{getTodayCases(worldStats)}} </td>
   </ng-container>
 
   <ng-container matColumnDef="deaths">
@@ -42,8 +42,8 @@
 
   <ng-container matColumnDef="todayDeaths">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths Today </th>
-    <td mat-cell *matCellDef="let entry" class="deaths-today"> {{getTodayDeaths(entry) | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{getTodayDeaths(worldStats) | number}} </td>
+    <td mat-cell *matCellDef="let entry" class="deaths-today"> {{getTodayDeaths(entry)}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{getTodayDeaths(worldStats)}} </td>
   </ng-container>
 
   <ng-container matColumnDef="active">

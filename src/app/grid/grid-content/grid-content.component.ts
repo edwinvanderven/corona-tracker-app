@@ -1,3 +1,4 @@
+import { formatNumber } from '@angular/common';
 import { Component, Input, ViewChild } from '@angular/core';
 import { Result, Entry } from 'src/app/corona.service';
 import { MatSort } from '@angular/material/sort';
@@ -44,10 +45,10 @@ export class GridContentComponent {
   }
 
   getTodayCases(entry: Entry): string {
-    return entry.todayCases > 0 ? '+' + entry.todayCases : '';
+    return entry.todayCases > 0 ? '+' + formatNumber(entry.todayCases, 'en-US') : '';
   }
 
   getTodayDeaths(entry: Entry): string {
-    return entry.todayDeaths > 0 ? '+' + entry.todayDeaths : '';
+    return entry.todayDeaths > 0 ? '+' + formatNumber(entry.todayDeaths, 'en-US') : '';
   }
 }
