@@ -1,6 +1,7 @@
 # Corona Tracker
 
 This app shows an Angular Material table with the contents of [https://corona-stats.online](https://corona-stats.online/).
+The lastest data is retrieved every minute so that the user does not have to refresh the screen.
 
 - Special thanks to [sagarkarira](https://github.com/sagarkarira/coronavirus-tracker-cli).
 
