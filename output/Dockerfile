@@ -1,4 +1,4 @@
-## use the latest docker image for NGINX
+## Use the latest docker image for NGINX
 FROM nginx:latest
 
 ## Remove default NGINX web files
@@ -10,7 +10,7 @@ COPY ./dist /usr/share/nginx/html
 ## Set the permission for NGINX web folder
 RUN chmod 777 -R /usr/share/nginx/html
 
-## Overwrit the default NGINX config using the custom config file
+## Overwrite the default NGINX config using the custom config file
 COPY ./custom-nginx-file.conf /etc/nginx/conf.d/default.conf
 
 ## Expose the docker port

@@ -1,11 +1,12 @@
 # Corona Tracker
 
 This app shows an Angular Material table with the contents of [https://corona-stats.online](https://corona-stats.online/).
-The lastest data is retrieved every minute so that the user does not have to refresh the screen.
+> Special thanks to [sagarkarira](https://github.com/sagarkarira/coronavirus-tracker-cli).
 
-- Special thanks to [sagarkarira](https://github.com/sagarkarira/coronavirus-tracker-cli).
+The lastest data is retrieved every minute so that the user does not have to refresh the screen.  
 
-Online version is hosted in AWS [here](http://corona-tracker-docker.eu-west-1.elasticbeanstalk.com).
+> Online version is hosted in AWS [here](http://corona-tracker-docker.eu-west-1.elasticbeanstalk.com).  
+> :information_source: In order to make it run in AWS the outline of [this article](https://medium.com/@ariescamitan/deploying-a-single-docker-to-aws-elastic-beanstalk-using-aws-elb-wizard-ac423bd7aa01) was used.
 
 ## Install
 
