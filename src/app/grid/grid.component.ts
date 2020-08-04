@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Result, CoronaService } from '../corona.service';
+import * as Loading from 'simple-loading-animation';
 
 @Component({
   selector: 'app-grid',
@@ -16,6 +17,7 @@ export class GridComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading = true;
+    Loading.show();
     const intervalTimeout = 60000; // 1 minute
 
     setInterval(() => this.getData(), intervalTimeout);
@@ -31,11 +33,13 @@ export class GridComponent implements OnInit {
 
   private handleResult(result: Result[]) {
     this.isError = this.isLoading = false;
+    Loading.hide();
     this.gridData = result;
   }
 
   private handleError(error: Error) {
     console.error(error);
+    Loading.hide();
     this.isLoading = false;
     this.isError = true;
   }
