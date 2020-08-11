@@ -25,7 +25,7 @@
   <ng-container matColumnDef="cases">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Cases Total </th>
     <td mat-cell *matCellDef="let entry"> {{entry.cases | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{worldStats.cases | number}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{worldStats?.cases | number}} </td>
   </ng-container>
 
   <ng-container matColumnDef="todayCases">
@@ -37,7 +37,7 @@
   <ng-container matColumnDef="deaths">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Deaths Total </th>
     <td mat-cell *matCellDef="let entry" class="deaths-total"> {{entry.deaths | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{worldStats.deaths | number}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{worldStats?.deaths | number}} </td>
   </ng-container>
 
   <ng-container matColumnDef="todayDeaths">
@@ -49,13 +49,13 @@
   <ng-container matColumnDef="active">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Active </th>
     <td mat-cell *matCellDef="let entry"> {{entry.active | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{worldStats.active | number}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{worldStats?.active | number}} </td>
   </ng-container>
 
   <ng-container matColumnDef="recovered">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Recovered </th>
     <td mat-cell *matCellDef="let entry"> {{entry.recovered | number}} </td>
-    <td mat-footer-cell *matFooterCellDef> {{worldStats.recovered | number}} </td>
+    <td mat-footer-cell *matFooterCellDef> {{worldStats?.recovered | number}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true"></tr>

@@ -2,9 +2,7 @@
   Error while loading
 </div>
 
-<div *ngIf="isLoading">
-  <div class="app-loading"><div>Loading<span>.</span><span>.</span><span>.</span></div></div>
-</div>
+<simple-loader class="loading-state" *ngIf="isLoading" active></simple-loader>
 
 <div *ngIf="!isLoading && !isError">
   <div class="mat-app-background basic-container parent-grid">

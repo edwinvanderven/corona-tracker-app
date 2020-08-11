@@ -45,10 +45,10 @@ export class GridContentComponent {
   }
 
   getTodayCases(entry: Entry): string {
-    return entry.todayCases > 0 ? '+' + formatNumber(entry.todayCases, 'en-US') : '';
+    return entry?.todayCases > 0 ? '+' + formatNumber(entry.todayCases, 'en-US') : '';
   }
 
   getTodayDeaths(entry: Entry): string {
-    return entry.todayDeaths > 0 ? '+' + formatNumber(entry.todayDeaths, 'en-US') : '';
+    return entry?.todayDeaths > 0 ? '+' + formatNumber(entry.todayDeaths, 'en-US') : '';
   }
 }
