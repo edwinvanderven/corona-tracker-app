@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Result, CoronaService } from '../corona.service';
-import 'simple-loading-animation/simple-loader.js';
+import 'simple-loading-animation/simple-loader-with-text.js';
 
 @Component({
   selector: 'app-grid',
